@@ -1,0 +1,27 @@
+{
+  "short_name": "PharmaGuard",
+  "name": "PharmaGuard PGx - AI Pharmacogenomic Risk Predictor",
+  "description": "AI-powered pharmacogenomic clinical decision support system analyzing VCF genetic data for personalized drug safety recommendations.",
+  "icons": [
+    {
+      "src": "logo192.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#0f172a",
+  "background_color": "#f8fafc",
+  "categories": ["medical", "health", "productivity"],
+  "lang": "en",
+  "dir": "ltr"
+}
