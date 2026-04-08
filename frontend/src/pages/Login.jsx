@@ -194,7 +194,7 @@ export default function Login() {
                   onClick={() => handleRoleSelect(role.id)}
                   style={{
                     display: 'flex', alignItems: 'center', gap: 8, padding: '11px 14px',
-                    borderRadius: 'var(--radius-md)', cursor: 'pointer',
+                    borderRadius: 'var(--radius-md)',
                     border: `1.5px solid ${selectedRole === role.id ? role.border : 'var(--border-default)'}`,
                     background: selectedRole === role.id ? role.bg : 'transparent',
                     color: selectedRole === role.id ? role.color : 'var(--text-secondary)',

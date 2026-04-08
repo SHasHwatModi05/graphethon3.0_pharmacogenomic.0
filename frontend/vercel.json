@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/api/:path*",
-      "destination": "https://grapthethon3-0-pharmacogenomic-0.onrender.com/api/:path*"
-    }
-  ]
-}
