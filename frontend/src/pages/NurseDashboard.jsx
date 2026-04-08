@@ -90,7 +90,7 @@ function VitalsLogger() {
   const [error, setError] = useState('');
   const [liveVitals, setLiveVitals] = useState([]);
   const wsRef = useRef(null);
-  const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+  const BASE_URL = "/api"
   const { token } = useAuth();
 
   useEffect(() => {
@@ -100,8 +100,8 @@ function VitalsLogger() {
   useEffect(() => {
     if (!selectedPatient) return;
     // Connect WebSocket for live updates
-    const wsUrl = BASE_URL.replace('http', 'ws');
-    const ws = new WebSocket(`${wsUrl}/nurse/realtime/${selectedPatient.id}?token=${token}`);
+    const wsUrl = window.location.origin.replace('https', 'wss').replace('http', 'ws');
+    const ws = new WebSocket(`${wsUrl}/api/nurse/realtime/${selectedPatient.id}?token=${token}`);
     wsRef.current = ws;
 
     ws.onmessage = (e) => {

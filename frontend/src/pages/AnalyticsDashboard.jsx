@@ -1,7 +1,7 @@
 // pages/AnalyticsDashboard.jsx — Industry-level analytics page
 import React, { useState, useEffect, useRef } from 'react';
 
-const API = 'http://localhost:8000';
+const API = '/api';
 
 // Animated count-up hook
 function useCountUp(target, duration = 800) {

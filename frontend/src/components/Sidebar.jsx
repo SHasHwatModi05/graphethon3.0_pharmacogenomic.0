@@ -61,7 +61,7 @@ export default function Sidebar() {
 
   useEffect(() => {
     // Check API health
-    fetch('http://localhost:8000/health')
+    fetch('/api/health')
       .then(r => r.ok ? setApiOnline(true) : setApiOnline(false))
       .catch(() => setApiOnline(false));
 
