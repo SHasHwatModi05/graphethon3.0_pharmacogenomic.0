@@ -313,3 +313,11 @@ def check_drug_interactions(request: DDICheckRequest):
                         "mechanism": ddi["mechanism"], "recommended_action": ddi["action"]})
     return {"drugs_checked": drugs_upper, "interaction_count": len(interactions),
             "interactions": interactions, "safe": len(interactions) == 0}
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+@app.get("/")
+def root():
+    return {"message": "API running"}
